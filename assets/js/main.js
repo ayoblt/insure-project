@@ -34,6 +34,7 @@ overlay.addEventListener('click', function() {
     if (times.classList.contains('fa-times')) {
       times.classList.remove('fa-times');
       times.classList.add('fa-bars');
+      bodyFixed.classList.remove('fixed-position');
     }
     else {
       pass;
