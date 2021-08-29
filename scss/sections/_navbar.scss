@@ -1,0 +1,92 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.menu {
+    
+    li {
+        padding: 0 0.8125rem;
+
+        a{
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $secondary !important;
+
+            &:hover {
+                color: $headings !important;
+            }
+        }
+
+        
+    }
+
+
+    
+    
+    @include media-breakpoint-down(lg){
+        
+
+        .overlay {
+            position: fixed;
+            bottom: 0;
+            top: 3.4rem;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.24);
+            visibility: hidden;
+        }
+
+        .mobile-nav{
+            background-color: #2B282F;
+            position: fixed;
+            top: -100%;
+            transition: all ease 0.3s;
+            left: 0;
+            max-height: 540px;
+            bottom: 0;
+            background-image: url('/images/bg-pattern-mobile-nav.svg');
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: 100%;
+
+        }
+
+        ul {
+            // @include absoluteCenter;
+            padding-top: 3.5rem;
+            padding-bottom: 3.5rem;
+
+            li {
+                padding-bottom: 5%;
+                
+                a {
+                    color: $white !important;
+                }
+                
+            }
+
+            
+        }
+        
+        
+    }
+
+    &.active {
+        .mobile-nav {
+            top: 3.5rem;
+            bottom: 0;
+            z-index: 1;
+        }
+
+        .overlay {
+            visibility: visible;
+            z-index: 1;
+        }
+
+        
+    }
+
+}
+.fixed-position {
+    overflow: hidden;
+ }

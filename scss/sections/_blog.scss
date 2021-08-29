@@ -1,0 +1,42 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.blog {
+    margin-top: 15rem;
+
+        i {
+            font-size: 4rem;
+            color: $secondary;
+        }
+
+        h3 {
+            font-size: 1.7rem;
+            padding-top: .8rem;
+            padding-bottom: 1.5rem;
+        }
+
+        p {
+            color: #878588;
+            line-height: 2;
+        }
+
+        .line-blog::before {
+            position: absolute;
+            content: "";
+            width: 9rem;
+            height: 0.1rem;
+            display: block;
+            background-color: #2A272E;
+            margin-bottom: 4rem;
+
+            @include media-breakpoint-down(md) {
+                left: 50%;
+                transform: translate(-50%);
+            }
+            
+        
+        
+            
+        }
+}
+

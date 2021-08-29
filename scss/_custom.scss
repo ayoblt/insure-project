@@ -1,0 +1,28 @@
+
+//THEME COLORS
+$dark-violet: #2C2640;
+$grayish-blue: #96A9C7;
+
+
+//WHITE AND GRAY COLORS
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+
+$primary: $dark-violet;
+$secondary: $grayish-blue;
+$headings: #2A272E;
+$footer-bg: #FAFAFA;
+
+
+//IMPORT BOOTSTRAP 5
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

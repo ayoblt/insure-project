@@ -1,0 +1,34 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.how-we-work {
+    background-color: $primary;
+    background-image: url('/images/bg-pattern-how-we-work-desktop.svg');
+    background-size: 30rem 15rem;
+    background-repeat: no-repeat;
+    background-position: right top;
+    padding: 2rem 5rem;
+    margin-top: 10rem;
+
+    @include media-breakpoint-down(md) {
+        background-image: url('/images/bg-pattern-how-we-work-mobile.svg');
+        background-size: auto;
+        margin-top: 8rem;
+    }
+
+    .heading__hww {
+        font-size: 3rem;
+
+        @include media-breakpoint-down(md) {
+            font-size: 2rem;
+            text-align: center;
+
+            padding-bottom: 2.5rem;
+        }
+    }
+
+    .global_button {
+        padding: 0.5rem 2rem;
+    }
+
+}

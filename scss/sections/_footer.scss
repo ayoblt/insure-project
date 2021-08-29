@@ -1,0 +1,66 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.footer {
+
+
+
+    background-color: $footer-bg;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-image: url('/images/bg-pattern-footer-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: left top;
+
+    margin-top: 10rem;
+
+    @include media-breakpoint-down(md) {
+        margin-top: 9rem;
+        background-image: url('/images/bg-pattern-footer-mobile.svg');
+
+    }
+
+    .social-media {
+        margin-bottom: 2.5rem;
+
+        &--icon {
+            img {
+                padding-left: .9rem;
+                padding-top: 2rem;
+            }
+            
+        }
+    }
+
+    .company {
+
+        margin-top: 3rem;
+
+        &-title {
+            color: #78767B;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            font-weight: 800;
+            padding-bottom: 2rem;
+
+            
+        }
+
+        h2 {
+            text-transform: uppercase;
+            font-family: 'Karla', sans-serif;
+            font-size: 0.95rem;
+            letter-spacing: 2px;
+            font-weight: 800;
+            color: #3B3842;
+            padding-bottom: 0.6rem;
+
+            @include media-breakpoint-down(md) {
+                &:last-child {
+                    padding-bottom: 2rem;
+                }
+            }
+        }
+    }
+}
+

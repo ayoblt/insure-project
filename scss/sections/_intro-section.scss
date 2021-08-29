@@ -1,0 +1,72 @@
+@use '../custom' as *;
+@use '../components/mixins';
+
+.intro-section {
+    background-color: $primary;
+    // background-image: url('/images/bg-pattern-intro-right-desktop.svg'), url('/images/bg-pattern-intro-left-desktop.svg');
+    // background-position: right top, left bottom;
+    // background-repeat: no-repeat;
+    padding: 7.5rem 0 6rem 0;
+    height: 100%;
+
+    @include media-breakpoint-down(md) {
+        padding-top: 0;
+        text-align: center;
+
+    }
+
+    &__container {
+        position: relative;
+        height: 100%;
+        
+    }
+
+    .image-box {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        @include media-breakpoint-down(md) {
+            position: relative;
+        }
+
+    }
+
+
+    .bg-image-right {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+
+    }
+    .bg-image-left {
+        position: absolute;
+        top: 45%;
+        left: 0;
+
+        @include media-breakpoint-down(md) {
+            top: 25rem;
+        }
+
+
+    }
+}
+
+.heading {
+
+    &__intro {
+        margin-bottom: 2rem;
+        display: block;
+        color: $white;
+    }
+}
+
+.global-text {
+
+    &__description {
+        margin-bottom: 2rem;
+        display: block;
+    }
+}
+
