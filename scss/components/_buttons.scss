@@ -11,6 +11,11 @@
     
     @include media-breakpoint-down(lg) {
         color: $white;
+
+        &:hover {
+            background-color: white;
+            color: $primary;
+        }
     }
     
 }

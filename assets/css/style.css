@@ -11123,10 +11123,18 @@ textarea.form-control-lg {
   .global_button {
     color: #fff;
   }
+  .global_button:hover {
+    background-color: white;
+    color: #2C2640;
+  }
 }
 
 html, body {
   font-family: "Karla", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .heading {
@@ -11327,6 +11335,12 @@ html, body {
 .menu li a:hover {
   color: #2A272E !important;
 }
+@media (max-width: 767.98px) {
+  .menu li a:hover {
+    color: #fff !important;
+    font-size: 1.2rem;
+  }
+}
 @media (max-width: 991.98px) {
   .menu .overlay {
     position: fixed;
@@ -11358,6 +11372,9 @@ html, body {
     padding-bottom: 5%;
   }
   .menu ul li a {
+    color: #fff !important;
+  }
+  .menu ul li a:hover {
     color: #fff !important;
   }
 }
