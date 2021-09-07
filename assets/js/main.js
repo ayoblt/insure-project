@@ -5,6 +5,24 @@ const toggler = document.querySelector('.navbar-toggler');
 const times = toggler.querySelector('.fas');
 const overlay = document.querySelector('.overlay');
 const bodyFixed = document.querySelector('body');
+var classname = document.getElementsByClassName("nav-item");
+
+var myFunction = function() {
+  const screenWidth = parseInt(window.innerWidth);
+  if (screenWidth <= 991) {
+    menu.classList.remove("active");
+    times.classList.remove('fa-times');
+    times.classList.add('fa-bars');
+    bodyFixed.classList.remove('fixed-position');
+  }
+  else {
+    pass;
+  }
+};
+
+for (var i = 0; i < classname.length; i++) {
+    classname[i].addEventListener('click', myFunction, false);
+}
 
 
 // console.log(menu.classList)
@@ -25,7 +43,7 @@ function toggleNav() {
 }
 
 
-toggler.addEventListener('click', toggleNav)
+toggler.addEventListener('click', toggleNav);
 
 overlay.addEventListener('click', function() {
 
@@ -63,3 +81,15 @@ document.addEventListener('swiped-up', function() {
     pass;
   }
 })
+
+function closeNav() {
+  
+  
+  if (screenWidth <= 991) {
+    menu.classList.remove('active');
+  }
+  else {
+    pass;
+  }
+}
+
