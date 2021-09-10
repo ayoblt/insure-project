@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 </head>
 <body>
     <!--NAVBAR SECTION-->
@@ -50,7 +52,7 @@
 
       <!--INTRO-SECTION-->
       
-      <section id="into-section" class="intro-section">
+      <section id="intro-section" class="intro-section">
           <img src="images/bg-pattern-intro-right-desktop.svg" alt="" class="bg-image-right d-md-block d-none">
           
           
@@ -73,25 +75,25 @@
 
       <section id="blog" class="blog">
         <div class="container text-center text-md-start">
-          <div class="line-blog"></div>
-          <h1 class="display-3 heading pt-5">We're different</h1>
+          <div class="line-blog" data-aos="fade-up"></div>
+          <h1 class="display-3 heading pt-5" data-aos="fade-up-left">We're different</h1>
           <div class="row pt-5">
             <div class="col-md-4 col-sm-12">
               <i class="bi bi-lightning-charge-fill"></i>
-              <h3 class="display-3 heading">Snappy process</h3>
-              <p class="lead global-text">Our application process can be completed in minutes, not hours. Don’t get 
+              <h3 class="display-3 heading" data-aos="fade-up-left" data-aos-delay="75">Snappy process</h3>
+              <p class="lead global-text" data-aos="fade-right">Our application process can be completed in minutes, not hours. Don’t get 
                 stuck filling in tedious forms.</p>
             </div>
             <div class="col-md-4 col-sm-12">
               <i class="bi bi-currency-dollar"></i>
-              <h3 class="display-3 heading">affordable price</h3>
-              <p class="lead global-text">We don’t want you worrying about high monthly costs. Our prices may be low, 
+              <h3 class="display-3 heading" data-aos="fade-up" data-aos-delay="90">affordable price</h3>
+              <p class="lead global-text" data-aos="slide-up">We don’t want you worrying about high monthly costs. Our prices may be low, 
                 but we still offer the best coverage possible.</p>
             </div>
             <div class="col-md-4 col-sm-12">
               <i class="bi bi-person-fill"></i>
-              <h3 class="display-3 heading">People first</h3>
-              <p class="lead global-text">Our plans aren’t full of conditions and clauses to prevent payouts. We make 
+              <h3 class="display-3 heading"  data-aos="fade-up-right" data-aos-delay="100">People first</h3>
+              <p class="lead global-text" data-aos="fade-left">Our plans aren’t full of conditions and clauses to prevent payouts. We make 
                 sure you’re covered when you need it.</p>
             </div>
           </div>
@@ -100,13 +102,13 @@
 
       <!--Start the how-->
 
-      <section id="how-we-work" class="">
+      <section id="how-we-work" class=""  data-aos="fade-up-right">
         <div class="container how-we-work">
           <div class="row text-center text-md-start">
             <div class="col-md-6 col-sm-12 pb-sm-4">
-              <h3 class="heading heading__hww text-white">Find out more<br>about how we work</h3>
+              <h3 class="heading heading__hww text-white" data-aos="slide-right">Find out more<br>about how we work</h3>
             </div>
-            <div class="col-md-6 col-sm-12 text-center my-auto text-md-end">
+            <div class="col-md-6 col-sm-12 text-center my-auto text-md-end" data-aos="fade-up-right">
               <button type="button" class="btn text-uppercase btn-outline-light global_button text-uppercase shadow-none">how we work</button>
             </div>
           </div>
@@ -114,7 +116,7 @@
       </section>
 
       <!--Start the footer-->
-      <footer id="footer" class=" footer">
+      <footer id="footer" class=" footer" data-aos="zoom-in">
         <div class="container overflow-hidden">
           <div class="row social-media text-center text-md-start">
             <div class="col-md-6 col-sm-12 ps-md-0">
@@ -132,7 +134,7 @@
           
           <!--start the company liskkjt-->
           <div class="row company global-text text-md-start text-center">
-            <div class="col-md-3">
+            <div class="col-md-3" data-aos="fade-up-left">
               <h3 class="company-title text-uppercase">our company</h3>
               <!--list-->
               <h2>how we work</h2>
@@ -140,7 +142,7 @@
               <h2>view plans</h2>
               <h2>Reviews</h2>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3" data-aos="fade-up-left">
               <h3 class="company-title text-uppercase">help me</h3>
               <!--list-->
               <h2>faq</h2>
@@ -148,14 +150,14 @@
               <h2>Privacy policy</h2>
               <h2>cookies</h2>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3" data-aos="fade-up-right">
               <h3 class="company-title text-uppercase">contact</h3>
               <!--list-->
               <h2>sales</h2>
               <h2>support</h2>
               <h2>live chat</h2>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3" data-aos="fade-up-right">
               <h3 class="company-title text-uppercase">others</h3>
               <!--list-->
               <h2>careers</h2>
@@ -171,7 +173,16 @@
 
       <script src="assets/js/swiped-events.js"></script>
       <script src="assets/js/main.js"></script>
-    <script src="assets/js/bootstrap.bundle.js"></script>
+      <script src="assets/js/bootstrap.bundle.js"></script>
+
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          offset: 130,
+          duration: 900
+        });
+      </script>
+  
 </body>
 </html>
 

@@ -11133,10 +11133,6 @@ html, body {
   font-family: "Karla", sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 .heading {
   font-family: "DM Serif Display", serif;
   color: #2A272E;
@@ -11213,7 +11209,11 @@ html {
 }
 .footer .social-media--icon img {
   padding-left: 0.9rem;
-  padding-top: 2rem;
+}
+@media (max-width: 767.98px) {
+  .footer .social-media--icon img {
+    padding-top: 2rem;
+  }
 }
 .footer .company {
   margin-top: 3rem;
@@ -11273,7 +11273,6 @@ html {
 .intro-section {
   background-color: #2C2640;
   padding: 7.5rem 0 6rem 0;
-  height: 100%;
 }
 @media (max-width: 767.98px) {
   .intro-section {
@@ -11390,6 +11389,10 @@ html {
 
 .fixed-position {
   overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /*# sourceMappingURL=style.css.map */

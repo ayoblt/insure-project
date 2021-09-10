@@ -26,7 +26,11 @@
         &--icon {
             img {
                 padding-left: .9rem;
-                padding-top: 2rem;
+
+                @include media-breakpoint-down(md) {
+                    padding-top: 2rem;
+                }
+                
             }
             
         }

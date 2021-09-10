@@ -80,16 +80,5 @@ document.addEventListener('swiped-up', function() {
   else {
     pass;
   }
-})
-
-function closeNav() {
-  
-  
-  if (screenWidth <= 991) {
-    menu.classList.remove('active');
-  }
-  else {
-    pass;
-  }
-}
+});
 
