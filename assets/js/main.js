@@ -82,3 +82,5 @@ document.addEventListener('swiped-up', function() {
   }
 });
 
+
+$('[data-aos]').parent().addClass('hideOverflowOnMobile');

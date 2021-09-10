@@ -99,3 +99,10 @@
 .fixed-position {
     overflow: hidden;
  }
+
+
+ @media (max-width: 768px) {
+    .hideOverflowOnMobile {
+        overflow-x: hidden;
+    }
+}

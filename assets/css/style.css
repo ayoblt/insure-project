@@ -11391,8 +11391,10 @@ html, body {
   overflow: hidden;
 }
 
-html {
-  scroll-behavior: smooth;
+@media (max-width: 768px) {
+  .hideOverflowOnMobile {
+    overflow-x: hidden;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

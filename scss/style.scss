@@ -4,8 +4,6 @@
 @use 'components/buttons';
 @use 'components/mixins';
 @use 'components/typography';
-// @use 'components/animations';
-// @use 'components/variables';
 
 //IMPORT SECTIONS
 @use 'sections/blog';
@@ -13,7 +11,3 @@
 @use 'sections/how-we-work';
 @use 'sections/intro-section';
 @use 'sections/navbar';
-
-html {
-    scroll-behavior: smooth;
-}
